@@ -1,10 +1,12 @@
 package com.nicopaez.springping.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties(prefix="webapp.parameters")
+@RefreshScope
 public class Parameters {
 
   private String value1;

@@ -9,6 +9,8 @@ To build: mvn clean package
 
 To run: mvn spring-boot:run (then browse http://localhost:8080)
 
+IMPORTANT: the application loads the configuration from Spring Cloud Config, check the bootstrap.properties file.
+
 Working with Docker
 -------------------
 
