@@ -15,6 +15,7 @@ public class ApplicationData {
 
   public ApplicationData(){
     appName = "Proof of concept Spring-Boot, Docker and OpenShift";
+    appVersion = ApplicationData.class.getPackage().getImplementationVersion();
     time = LocalDateTime.now();
   }
 
